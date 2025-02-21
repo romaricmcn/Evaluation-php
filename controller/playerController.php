@@ -4,25 +4,20 @@ class PlayerController {
     private ViewPlayer $player;
     //CONSTRUCT
     public function __construct(ViewPlayer $player) {
-        
+
     }
 
     //GETTER & SETTER
     public function getPlayer(){
-        $this->playerviewPlayer = Player::find(1);
+        $this->viewPlayer = $player;
     }
-    public function setPlayer(Request $request){
+    public function setPlayer(viewPlayer $player){
         // TODO
     }
     //METHODE
     public function render():void{
-        //Header
         echo $this->$header();
-
-        //Mon Compte
         echo $this->$footer();
-        
-        //Footer
         echo $this->$model();
     }
 }
