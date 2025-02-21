@@ -1,3 +1,9 @@
+<?php
+class ViewHeader{
+    //METHODE
+    public function displayView():string{
+        ob_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,3 +16,7 @@
         <nav></nav>
     </header>
     <main>
+    <?php
+        return ob_get_clean();
+    }
+}

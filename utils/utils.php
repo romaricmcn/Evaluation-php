@@ -14,7 +14,7 @@ function sanitize($data){
  *@return PDO l'objet de connexion à la bdd
 */
 function connect(){
-    return new PDO('mysql:host=;dbname=','','',array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
+    return new PDO('mysql:host=;dbname=test','root','',array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
 }
 
 ?>
