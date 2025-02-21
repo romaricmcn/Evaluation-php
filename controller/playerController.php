@@ -2,6 +2,11 @@
 class PlayerController {
     //ATTRIBUT
     private ViewPlayer $player;
+    //CONSTRUCT
+    public function __construct(ViewPlayer $player) {
+        
+    }
+
     //GETTER & SETTER
     public function getPlayer(){
         $this->playerviewPlayer = Player::find(1);
