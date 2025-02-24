@@ -16,8 +16,8 @@ class PlayerController {
     }
     //METHODE
     public function render():void{
-        echo $this->$header();
-        echo $this->$footer();
+        echo $this->$header;
+        echo $this->$footer;
         echo $this->$model();
     }
 }
